@@ -21,6 +21,9 @@ attr_accessor :length_first, :length_second, :length_third)
   def message
     "They all have to be the same length"
   end
+  end
+
+end
 
 begin
   raise YourCustomError
