@@ -10,11 +10,11 @@ attr_accessor :length_first, :length_second, :length_third)
     :equilateral
     #returns its type as a symbol
    if side.Triangle !length_first == length_second == length_third
-  begin
+    begin
     raise TriangleError
-  rescue
+    rescue
     puts error.message
-  end
+    end
   end
 
   class TriangleError < StandardError
