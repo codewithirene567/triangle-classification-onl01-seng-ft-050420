@@ -6,7 +6,7 @@ class Triangle
     @length_third = length_third
   end
 
-  def kind(side)
+  def kind
 
 
     #returns its type as a symbol
