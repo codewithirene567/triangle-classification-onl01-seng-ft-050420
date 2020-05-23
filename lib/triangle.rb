@@ -8,7 +8,7 @@ attr_accessor :length_first, :length_second, :length_third)
 
   def kind(side)
     :equilateral == length_first == length_second == length_third
-    :isosceles 
+    :isosceles
     #returns its type as a symbol
    if side.Triangle
     begin
