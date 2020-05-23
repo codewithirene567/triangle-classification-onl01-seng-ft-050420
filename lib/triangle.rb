@@ -14,10 +14,11 @@ attr_accessor :side1, :side2, :side3
     raise TriangleError
   elsif(equilateral?)
     :equilateral
-  elsif(isosceles?)
-    :isosceles
-  else(scalene?)
+
+  elsif(scalene?)
       :scalene
+    else(isosceles?)
+      :isosceles
     end
 
   end
