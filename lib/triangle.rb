@@ -8,9 +8,7 @@ class Triangle
 
   def kind(side)
     
-    :equilateral == length_first == length_second == length_third
-    :isosceles == length_first == length_second == !length_third
-    :scalene == !length_first == !length_second == !length_third
+  
     #returns its type as a symbol
     kind = self.side
     if side.Triangle != side
@@ -24,6 +22,14 @@ class Triangle
     end
   end
 
+  def equilateral 
+    length_first == length_second || length_first == length_third ||
+  end
+  
+  :isosceles == length_first == length_second == !length_third
+  :scalene == !length_first == !length_second == !length_third
+
+  
   class TriangleError < StandardError
   def message
     "This triangle is not valid"
