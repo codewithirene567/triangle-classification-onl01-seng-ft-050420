@@ -17,7 +17,8 @@ attr_accessor :length_first, :length_second, :length_third)
   end
 
   class TriangleError < StandardError
-
+  def message
+    
 end
 
 begin
