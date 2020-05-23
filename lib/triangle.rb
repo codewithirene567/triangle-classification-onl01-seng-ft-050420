@@ -11,8 +11,9 @@ attr_accessor :length_first, :length_second, :length_third
     :isosceles == length_first == length_second == !length_third
     :scalene == !length_first == !length_second == !length_third
     #returns its type as a symbol
-   if side.Triangle #does not equal any of these types
-     kind = 
+    
+     kind = self.side
+    if side.Triangle != side
     begin
     raise TriangleError
     rescue
