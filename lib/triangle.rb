@@ -13,7 +13,7 @@ attr_accessor :length_first, :length_second, :length_third)
    begin
     raise TriangleError
   rescue
-    puts TriangleError.message
+    puts error.message
   end
   end
 
