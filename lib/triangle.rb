@@ -5,5 +5,5 @@ class Triangle
     @length_third = length_third
   end
 
-  def 
+  def
 end
