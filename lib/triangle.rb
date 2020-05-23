@@ -20,7 +20,7 @@ attr_accessor :length_first, :length_second, :length_third)
 
   class TriangleError < StandardError
   def message
-    "They all have to be the same length"
+    "This triangle is not valid"
   end
   end
 
