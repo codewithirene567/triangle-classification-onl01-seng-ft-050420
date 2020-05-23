@@ -14,8 +14,11 @@ attr_accessor :length_first, :length_second, :length_third
     raise TriangleError
   elsif(equilateral?)
     :equilateral
-    else
-      side.Triangle = self
+  elsif(isosceles)
+    :isosceles
+  else(scalene)
+      :scalene
+    end
     end
   end
 
