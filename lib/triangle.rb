@@ -19,8 +19,7 @@ attr_accessor :side1, :side2, :side3
   else(scalene)
       :scalene
     end
-    end
-    end
+    
   end
 
   def equilateral?
