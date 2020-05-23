@@ -9,7 +9,7 @@ attr_accessor :length_first, :length_second, :length_third)
   def kind(side)
     :equilateral
     #returns its type as a symbol
-   if side.Triangle
+   if side.Triangle  !length_first == length_second == length_third
     begin
     raise TriangleError
     rescue
