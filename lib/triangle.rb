@@ -6,7 +6,7 @@ attr_accessor :length_first, :length_second, :length_third)
     @length_third = length_third
   end
 
-  def kind
+  def kind(side)
     :equilateral
     #returns its type as a symbol
    if !length_first == length_second == length_third
