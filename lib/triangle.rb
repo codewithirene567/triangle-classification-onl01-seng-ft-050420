@@ -1,12 +1,12 @@
 class Triangle
-attr_accessor :length_first, :length_second, :length_third
-@lengths = []
+attr_accessor :side1, :side2, :side3
+@allsides = []
 
   def initialize(length_first, length_second, length_third)
-    @length_first = length_first
-    @length_second = length_second
-    @length_third = length_third
-    @lengths = [length_first, length_second, length_third]
+    @side1 = side1
+    @side2 = side2
+    @side3 = side3
+    @allsides = [side1, side2, side3]
   end
 
   def kind
@@ -34,8 +34,12 @@ attr_accessor :length_first, :length_second, :length_third
     (@side2 == @side3) || (@side1 == @side2) || (@side1 = @side3)
   end
 
+  def less_than_or_equal_to_zero
+    (@side1 <= 0) || (@side2 <= 0) || (@side3 <= 0)
+  end
+
   def valid?
-    (@side)
+    (@side1 + @side2 > @side3) || (@side2 + @side3 > @side1) || (@side1 + @side3 > @side2)
   end
 
 
