@@ -38,7 +38,7 @@ attr_accessor :length_first, :length_second, :length_third
 
   class TriangleError < StandardError
 
-  end
+  
   end
 
 end
