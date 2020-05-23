@@ -12,9 +12,8 @@ attr_accessor :length_first, :length_second, :length_third
   def kind
     if (less_than_or_equal_to_zero == true || valid? == false)
     raise TriangleError
-    rescue
-    puts error.message
-    end
+  elsif(equilateral?)
+    :equilateral
     else
       side.Triangle = self
     end
@@ -38,8 +37,7 @@ attr_accessor :length_first, :length_second, :length_third
 
 
   class TriangleError < StandardError
-  def message
-    "This triangle is not valid"
+  
   end
   end
 
