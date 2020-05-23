@@ -17,6 +17,9 @@ attr_accessor :length_first, :length_second, :length_third)
     rescue
     puts error.message
     end
+    else
+      side.Triangle = self
+    end
   end
 
   class TriangleError < StandardError
