@@ -24,11 +24,17 @@ class Triangle
 
   def equilateral
     equilateral = (length_first == length_second) || (length_first == length_third) || (length_second == length_third)
-    eqilateral
+    eqilateral 
   end
 
-  :isosceles == length_first == length_second == !length_third
-  :scalene == !length_first == !length_second == !length_third
+  def isosceles
+    isosceles = (length_first == !length_second) || (length_first == !length_third) || (length_second == length_third)
+    isosceles
+  end
+
+  def scalene
+    scalene = (length_first == !length_second) || (length_first == !length_third) || (length_second == !length_third)
+  
 
 
   class TriangleError < StandardError
