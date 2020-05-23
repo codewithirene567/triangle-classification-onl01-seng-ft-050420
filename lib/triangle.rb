@@ -14,6 +14,9 @@ attr_accessor :length_first, :length_second, :length_third)
     raise TriangleError
   rescue
   end
+  end
+
+  class TriangleError < StandardError
 
 end
 
