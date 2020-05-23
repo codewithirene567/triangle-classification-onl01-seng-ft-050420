@@ -29,8 +29,3 @@ attr_accessor :length_first, :length_second, :length_third)
   end
 
 end
-
-begin
-  raise YourCustomError
-rescue YourCustomError
-end
