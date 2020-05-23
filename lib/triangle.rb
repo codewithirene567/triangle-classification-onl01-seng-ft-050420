@@ -33,10 +33,10 @@ attr_accessor :length_first, :length_second, :length_third
 
   def valid?
     (@side)
+  end
 
 
 
-  
 end
 
 #begin
