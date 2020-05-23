@@ -23,7 +23,7 @@ class Triangle
   end
 
   def equilateral
-    equilateral = (length_first == length_second) || (length_first == length_third) || (length_second == length_third)
+    equilateral = (length_first == length_second == length_third)
     self == eqilateral
   end
 
