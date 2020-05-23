@@ -25,7 +25,7 @@ class Triangle
   def equilateral
     if length_first == length_second || length_first == length_third || length_second == length_third
   end
-  
+
   :isosceles == length_first == length_second == !length_third
   :scalene == !length_first == !length_second == !length_third
 
