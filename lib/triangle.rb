@@ -13,13 +13,14 @@ attr_accessor :length_first, :length_second, :length_third)
    begin
     raise TriangleError
   rescue
+    puts TriangleError.message
   end
   end
 
   class TriangleError < StandardError
   def message
-    
-end
+    "They all have to be the same length"
+  end
 
 begin
   raise YourCustomError
