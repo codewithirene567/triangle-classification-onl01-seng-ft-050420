@@ -12,10 +12,9 @@ attr_accessor :side1, :side2, :side3
   def kind
     if (less_than_or_equal_to_zero == true || valid? == false)
     raise TriangleError
-  elsif(equilateral?)
+    elsif(equilateral?)
     :equilateral
-
-  elsif(scalene?)
+    elsif(scalene?)
       :scalene
     else(isosceles?)
       :isosceles
