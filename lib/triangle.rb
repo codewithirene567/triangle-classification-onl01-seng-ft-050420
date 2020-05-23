@@ -1,5 +1,5 @@
 class Triangle
-attr_accessor :length_first, :length_second, :length_third
+#attr_accessor :length_first, :length_second, :length_third
   def initialize(length_first, length_second, length_third)
     @length_first = length_first
     @length_second = length_second
@@ -7,6 +7,7 @@ attr_accessor :length_first, :length_second, :length_third
   end
 
   def kind(side)
+    
     :equilateral == length_first == length_second == length_third
     :isosceles == length_first == length_second == !length_third
     :scalene == !length_first == !length_second == !length_third
